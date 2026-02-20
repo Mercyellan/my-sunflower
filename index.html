@@ -1,62 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Sunflower 🌻</title>
 
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- Floating Effects -->
-<div id="hearts"></div>
-<div id="petals"></div>
-<div id="sparkles"></div>
-
-<!-- Music -->
+<!-- Background Music -->
 <audio id="bg-music" loop>
-  <source src="music.mp3" type="audio/mp3">
+  <source src="/my-sunflower/audio.mp3" type="audio/mp3">
 </audio>
 <button id="music-btn">🔊</button>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" data-aos="fade-in">
   <h1>My Sunflower 🌻</h1>
-  <p>Happy Birthday, My Love ❤️</p>
+  <p>Happy Birthday, Ayanfemi ❤️</p>
   <span>Scroll ↓</span>
 </section>
 
-<!-- LOVE LETTER -->
-<section class="letter">
-  <h2>📖 A Letter For You</h2>
+<!-- STORY -->
+<section class="story" data-aos="fade-up">
+  <h2>Our Story</h2>
 
-  <div class="book">
-    <div class="page">
-      <pre id="typed-text"></pre>
+  <div class="timeline">
+    <div class="card">
+      <h3>How We Met</h3>
+      <p>I just knew our meeting was never a coincidence. From that very first conversation, it our bond just keeps getting stronger.</p>
+    </div>
+
+    <div class="card">
+      <h3>Our First Date</h3>
+      <p>Ahh! our "conversation over food walking on the streets of clarity" 😂😂 Nervous smiles with our list of questions 😂😂 which i really love,
+         i can't forget the taste of that cake too. I love every memory from that day, even though we didn,t take pictures.</p>
+    </div>
+
+    <div class="card">
+      <h3>Our Best Memories</h3>
+      <p>I love our trip coming back from church at gbagada and how you always reach to me to make sure we go home together. 
+        That's really a sweet gesture I hold those moments dearly and when we went to play games at shoprite ohh my!
+         i really hold these memories close to my heart.
+        And how you were so concerned about my eye health and made sure i got my glasses,
+        ohh goodness! my heart prays for you my love</p>
+    </div>
+
+    <div class="card">
+      <h3>Today</h3>
+      <p>Today, I celebrate the amazing man that you are. intentional and one of a kind authentic 😍.
+        You deserve to be celebrated not just today but every single day! 
+        This year it's a website maybe next year by God's Grace i will put you on a billbord make you feel like the King that you are.
+        I LOVE YOU SOOOO MUCH MY BABY!
+      </p>
     </div>
   </div>
 </section>
 
+<!-- LOVE LETTER -->
+<section class="letter" data-aos="fade-up">
+  <h2>A Letter For You 💌</h2>
+  <p id="typed-text"></p>
+</section>
+
 <!-- VIDEO -->
-<section class="video-section">
-  <h2>For You 🎥</h2>
-  <video controls poster="poster.jpg">
-    <source src="video.mp4" type="video/mp4">
-  </video>
+<section class="video-section" data-aos="zoom-in">
+  <h2> I want to create more memories with you my love 🎥</h2>
+
+  <div class="video-wrapper">
+    <video id="love-video" controls poster="/my-sunflower/poster.jpeg">
+      <source src="video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <p class="video-caption">made with plenty Love.I miss you soo much my Love!</p>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" data-aos="fade-up">
+  <h2>I want to celebrate you alawys my baby! 😍😍😍</h2>
+
+  <div class="grid">
+    <img src="img1.jpeg">
+    <img src="/my-sunflower/img2.jpeg">
+    <img src="/my-sunflower/img3.jpeg">
+    <img src="/my-sunflower/img4.jpeg">
+  </div>
+</section>
+
+<!-- FUTURE -->
+<section class="future" data-aos="fade-up">
+  <h2>Our Future ✨</h2>
+  <p>
+    I can't wait to build a life full of love, laughter, peace, and endless memories with you my love.
+  </p>
+</section>
+
+<!-- SECRET -->
+<section class="secret" data-aos="fade-up">
+  <h2>One Last Thing 🔐</h2>
+  <button id="unlock-btn">Unlock My Heart</button>
+  <p id="secret-text" class="hidden">
+    You are my sunshine on dark days, adding so much color to my life, you are my forever treasure.
+    I promise to love you deeper, to always make you proud, and be by your side making up the stongest team every passing day ❤️
+  </p>
 </section>
 
 <!-- FINAL -->
-<section class="final">
+<section class="final" data-aos="zoom-in">
   <h1>Forever Yours 🌻</h1>
   <p>This is only the beginning of our story.</p>
 </section>
 
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script src="script.js"></script>
+
+<script>
+  AOS.init({ duration: 1200, once: true });
+</script>
 
 </body>
 </html>

@@ -1,22 +1,32 @@
-// MUSIC
 const music = document.getElementById("bg-music");
-const btn = document.getElementById("music-btn");
+const musicBtn = document.getElementById("music-btn");
+const video = document.getElementById("love-video");
+
 let playing = false;
 
-btn.onclick = () => {
-  if(!playing){ music.play(); btn.textContent="🔈"; }
-  else { music.pause(); btn.textContent="🔊"; }
-  playing=!playing;
+musicBtn.onclick = () => {
+  if (!playing) {
+    music.play();
+    musicBtn.textContent = "🔇";
+  } else {
+    music.pause();
+    musicBtn.textContent = "🔊";
+  }
+  playing = !playing;
 };
 
-// LOVE LETTER TYPING
-const letter = `
-My sunflower 🌻,
+video.onplay = () => music.pause();
+video.onpause = () => music.play();
 
-My dearest sunflower,
+new Typed("#typed-text", {
+  strings: [`
+Mi Girasol, My sunflower 🌻,
+
+my dearest dearest,
 
 First of all, I Love you soo much! 🤭
 I Love you to the moon and I'm not coming back 😂😂😂😂
+
 To say you're one of the best thing to happen to me will be like an understatement, 
 You bring so much colour to my life.
 Your presence in my life is that missing piece I never knew I needed and you're not just present, you in Loveeeeee with meee!!! The realization is hitting me again as I type this 🤭
@@ -30,11 +40,12 @@ you're whatever you think you are and I love it for you!
 I Love how you Love me, gentle, calm, soft and sometimes dhjkkhcghcffjkhcdf then we align again 😂😂😂😂
 
 I Love you my honey boo! 
+
 You're my everyday highlight and favorite human being! 
 
 I just remembered this is suppose to be a birthday wish but look at me confessing Love 😂😂😂
 
-Happy Birthday ife teminikan!
+Happy Birthday ife teminikan 😍😍😍!
 
 I pray over you that,
 
@@ -57,55 +68,33 @@ The Lord will always be gracious to you!
 I look forward to celebrating more wins and successes with you! 
 I Love and cherish you so much ife mi, in fact words are not enough. 
 
-with Love, 
-your No 1 supporter.
-`;
+With love, 
+Your No.1 supporter ❤️
 
-let i = 0;
-const target = document.getElementById("typed-text");
+Happy Birthday,ife mi💖
+  `],
+  typeSpeed: 35,
+  showCursor: false
+});
 
-function typeLetter(){
-  if(i < letter.length){
-    target.textContent += letter.charAt(i);
-    i++;
-    setTimeout(typeLetter, 28);
-  } else {
-    confetti({ particleCount: 200, spread: 100, origin:{y:0.6} });
-  }
-}
+const unlockBtn = document.getElementById("unlock-btn");
+const secretText = document.getElementById("secret-text");
 
-typeLetter();
+unlockBtn.onclick = () => {
+  secretText.style.display = "block";
+  unlockBtn.style.display = "none";
 
-// FLOATING HEARTS
-function createHeart(){
-  const heart = document.createElement("div");
-  heart.className = "heart";
-  heart.textContent = "❤️";
-  heart.style.left = Math.random()*100 + "vw";
-  heart.style.fontSize = (12 + Math.random()*20) + "px";
-  document.body.appendChild(heart);
-  setTimeout(()=>heart.remove(),8000);
-}
-setInterval(createHeart,400);
+  confetti({
+    particleCount: 200,
+    spread: 80,
+    origin: { y: 0.6 }
+  });
+};
 
-// SUNFLOWER PETALS
-function createPetal(){
-  const petal = document.createElement("div");
-  petal.className="petal";
-  petal.textContent="🌻";
-  petal.style.left=Math.random()*100+"vw";
-  document.body.appendChild(petal);
-  setTimeout(()=>petal.remove(),10000);
-}
-setInterval(createPetal,700);
-
-// SPARKLES
-function createSparkle(){
-  const s=document.createElement("div");
-  s.className="sparkle";
-  s.style.left=Math.random()*100+"vw";
-  s.style.top=Math.random()*100+"vh";
-  document.body.appendChild(s);
-  setTimeout(()=>s.remove(),2000);
-}
-setInterval(createSparkle,300);
+setTimeout(() => {
+  confetti({
+    particleCount: 120,
+    spread: 60,
+    origin: { y: 0.7 }
+  });
+}, 1500);
