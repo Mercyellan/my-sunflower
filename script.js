@@ -27,15 +27,15 @@ my dearest dearest,
 First of all, I Love you soo much! 🤭
 I Love you to the moon and I'm not coming back 😂😂😂😂
 
-To say you're one of the best thing to happen to me will be like an understatement, 
+To say you're one of the best thing to happen to me will be an understatement, 
 You bring so much colour to my life.
 Your presence in my life is that missing piece I never knew I needed and you're not just present, you in Loveeeeee with meee!!! The realization is hitting me again as I type this 🤭
 
-Your charisma, your thoughts process (I could listen to you talk all day), your mindset, your humility and your heart is beautiful to see. 
+Your charisma, your thought process (I could listen to you talk all day), your mindset, your humility and your heart is beautiful to see. 
 The way you Love and do things with so much intentionality warms my heart 
 
 I'm soooooo proud of you!
-you're whatever you think you are and I love it for you!
+You're whatever you think you are and I love it for you!
 
 I Love how you Love me, gentle, calm, soft and sometimes dhjkkhcghcffjkhcdf then we align again 😂😂😂😂
 
@@ -45,7 +45,7 @@ You're my everyday highlight and favorite human being!
 
 I just remembered this is suppose to be a birthday wish but look at me confessing Love 😂😂😂
 
-Happy Birthday ife teminikan 😍😍😍!
+Happy Birthday ife teminikan! 😍😍😍
 
 I pray over you that,
 
