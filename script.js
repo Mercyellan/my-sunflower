@@ -73,7 +73,7 @@ Your No.1 supporter ❤️
 
 Happy Birthday,ife mi💖
   `],
-  typeSpeed: 35,
+  typeSpeed: 45,
   showCursor: false
 });
 
