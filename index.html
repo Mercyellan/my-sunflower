@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Sunflower 🌻</title>
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+<!-- Floating Effects -->
+<div id="hearts"></div>
+<div id="petals"></div>
+<div id="sparkles"></div>
 
 <!-- Music -->
 <audio id="bg-music" loop>
@@ -23,98 +24,39 @@
 <button id="music-btn">🔊</button>
 
 <!-- HERO -->
-<section class="hero" data-aos="fade-in">
+<section class="hero">
   <h1>My Sunflower 🌻</h1>
-  <p>Happy Birthday, Ayanfemi ❤️</p>
+  <p>Happy Birthday, My Love ❤️</p>
   <span>Scroll ↓</span>
 </section>
 
-<!-- STORY -->
-<section class="story" data-aos="fade-up">
-  <h2>Our Story</h2>
+<!-- LOVE LETTER -->
+<section class="letter">
+  <h2>📖 A Letter For You</h2>
 
-  <div class="timeline">
-    <div class="card">
-      <h3>How We Met</h3>
-      <p>From the very first beginning there have always been that connection, nothing forced, everything unfolding.</p>
-    </div>
-
-    <div class="card">
-      <h3>Our First Date</h3>
-      <p>One of my favorite memories. Nervous smiles, endless conversations, and warmth.</p>
-    </div>
-
-    <div class="card">
-      <h3>Our Best Memories</h3>
-      <p>Every laugh, every conversation, every milestone.</p>
-    </div>
-
-    <div class="card">
-      <h3>Today</h3>
-      <p>Today, I celebrate the amazing man you are.</p>
+  <div class="book">
+    <div class="page">
+      <pre id="typed-text"></pre>
     </div>
   </div>
-</section>
-
-<!-- LOVE LETTER -->
-<section class="letter" data-aos="fade-up">
-  <h2>A Letter For You 💌</h2>
-  <pre id="typed-text"></pre>
 </section>
 
 <!-- VIDEO -->
-<section class="video-section" data-aos="zoom-in">
+<section class="video-section">
   <h2>For You 🎥</h2>
-
-  <div class="video-wrapper">
-    <video controls poster="poster.jpg">
-      <source src="video.mp4" type="video/mp4">
-    </video>
-  </div>
-
-  <p class="video-caption">I made this with so much love, just for you 🌻</p>
-</section>
-
-<!-- GALLERY -->
-<section class="gallery" data-aos="fade-up">
-  <h2>Our Memories 📸</h2>
-
-  <div class="grid">
-    <img src="img1.jpg">
-    <img src="img2.jpg">
-    <img src="img3.jpg">
-    <img src="img4.jpg">
-  </div>
-</section>
-
-<!-- FUTURE -->
-<section class="future" data-aos="fade-up">
-  <h2>Our Future ✨</h2>
-  <p>I can't wait to build a life full of love, laughter and endless memories with you.</p>
-</section>
-
-<!-- SECRET -->
-<section class="secret" data-aos="fade-up">
-  <h2>One Last Thing 🔐</h2>
-  <button id="unlock-btn">Unlock My Heart</button>
-  <p id="secret-text" class="hidden">
-    You are my sunshine after rainy days, my calm in every storm, and my forever choice ❤️
-  </p>
+  <video controls poster="poster.jpg">
+    <source src="video.mp4" type="video/mp4">
+  </video>
 </section>
 
 <!-- FINAL -->
-<section class="final" data-aos="zoom-in">
+<section class="final">
   <h1>Forever Yours 🌻</h1>
   <p>This is only the beginning of our story.</p>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="script.js"></script>
-
-<script>
-  AOS.init({ duration: 1200, once: true });
-</script>
 
 </body>
 </html>
